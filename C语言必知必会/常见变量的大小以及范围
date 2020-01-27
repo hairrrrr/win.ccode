@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main() {
+
+	//表示整数优先考虑int
+	//表示浮点数优先考虑double
+
+	//以下讨论的范围均是在32位环境下的大小
+
+	printf("%d\n", sizeof(char));
+	//1字节
+	//范围：
+	//unsigned char: 0 ~ 255（2^8-1）  
+	//char: -128 ~ 127   
+	//减去1是因为考虑到0
+
+	printf("%d\n", sizeof(short));
+	//2字节
+	//范围：
+	//unsigned short: 0 ~ 65535
+	//short: -32768 ~ 32767
+	printf("%d\n", sizeof(int));
+	//4字节
+	//范围：
+	//0 ~ 42亿9千万 
+	//-21亿 ~ 21亿
+
+	printf("%d\n", sizeof(long));
+	//4字节
+	//32位 4字节 
+	//64位 8字节
+
+	printf("%d\n", sizeof(long long));
+	//8字节
+	//范围：很大(一般用不到吧)
+
+	printf("%d\n", sizeof(float));
+	//4字节
+
+	printf("%d\n", sizeof(double));
+	//8字节
+
+	printf("%d\n", sizeof(long double));
+	//16字节
+
+}      
+
+
+
+
