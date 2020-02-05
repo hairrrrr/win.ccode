@@ -8,6 +8,7 @@
 
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 int main(int argc, char* argv[]) {
 
@@ -16,9 +17,12 @@ int main(int argc, char* argv[]) {
 		printf("invalid input!\n");
 		return 0;
 	}
+	//atoi函数可以将字符串转变为数字
+	//因为我们输入的参数类型为字符串
 	int num1 = atoi(argv[2]);
 	int num2 = atoi(argv[3]);
 
+	//strcmp函数比较两个字符串是否相同，相同返回0
 	if (strcmp(argv[1], "-a") == 0)
 		printf("%d", num1 + num2);
 	else if (strcmp(argv[1], "-m") == 0)
